@@ -1,0 +1,87 @@
+.section-logo {
+    width: 100%;
+    min-height: 100vh; /* Занимаем всю высоту экрана */
+    height: 100vh; /* Фиксированная высота */
+    max-height: 100vh; /* Ограничиваем максимальную высоту */
+    background-color: #e1ff8f;
+    position: relative;
+    flex-shrink: 0;
+    overflow: hidden; /* Скрываем всё, что выходит за границы */ }
+
+.header {
+    width: 769px;
+    padding-top: 100px;
+    padding-left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: calc(100vh - 90px); /* Учитываем высоту ленты */; }
+
+.header-title {
+    font-weight: 700;
+    font-size: 64px; }
+  
+.header-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px; }.header-img {
+        position: absolute;
+        right: 0; }
+      
+.first-star {
+        position: absolute;
+        top: 94px;
+        left: 63px; }
+      
+.second-star {
+        position: absolute;
+        top: 69px;
+        left: 156px; }
+      
+.third-star {
+        position: absolute;
+        top: 65%;
+        left: 67%; }
+      
+.forth-star {
+        position: absolute;
+        top: 70%;
+        left: 70%; }
+
+        .animation-window {
+            background-color: #bdec32;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            height: 90px; /* Фиксированная высота ленты */; }
+          
+          .animation-line {
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 3220px;
+            animation: animLine 30s linear infinite; }
+            .animation-line__text {
+              font-weight: 700;
+              font-size: 30px;
+              position: relative; }
+              .animation-line__text::after {
+                content: '';
+                background-image: url(../img/Star.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 36px;
+                height: 36px;
+                position: absolute;
+                right: -115px; }
+          
+          @keyframes animLine {
+            0% {
+              transform: translateX(0); }
+            100% {
+              transform: translateX(-1800px); } }
+          
