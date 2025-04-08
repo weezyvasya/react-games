@@ -1,5 +1,6 @@
 import React from "react";
 import "./Main.css";
+import { Link } from "react-router-dom";
 import { gamesList } from "../../helpers/gamesList";
 import starAbout from "../../img/StarAbout.png";
 import star11 from "../../img/Star11.png";
@@ -33,7 +34,9 @@ function Main() {
                   <div className="card__bottom">
                     <strong>Игра № {game.number}</strong>
                     <h2>{game.title}</h2>
-                    <button className="btnUI btnUI_hidden">Играть</button>
+                    <Link to={game.path}>
+                      <button className="btnUI btnUI_hidden">Играть</button>
+                    </Link>
                   </div>
                 </div>
               ))}
