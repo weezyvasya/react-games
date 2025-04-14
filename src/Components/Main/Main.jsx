@@ -2,6 +2,7 @@ import React from "react";
 import "./Main.css";
 import { Link } from "react-router-dom";
 import { gamesList } from "../../helpers/gamesList";
+import Header from "../Header/Header";
 import starAbout from "../../img/StarAbout.png";
 import star11 from "../../img/Star11.png";
 import star12 from "../../img/Star12.png";
@@ -9,6 +10,7 @@ import star12 from "../../img/Star12.png";
 function Main() {
   return (
     <>
+     <Header />
       <section className="section-about">
         <img className="img-about" src={starAbout} alt="star" />
         <img className="img-about-first" src={star11} alt="star" />
