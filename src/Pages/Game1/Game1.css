@@ -1,4 +1,4 @@
-.btnUI {
+/* .btnUI {
     background: linear-gradient(90deg, #4a00e0, #8e2de2);
     color: white;
     border: none;
@@ -11,4 +11,116 @@
     opacity: 0;
     transform: translateY(10px);
     margin-top: auto;
+} */
+.game-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f8ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+.game-one__header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.game-one__header h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin: 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.game-one__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.game-one__main p {
+    font-size: 20px;
+    color: #34495e;
+    margin: 0 0 25px 0;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.game-one__main input {
+    width: 180px;
+    height: 50px;
+    padding: 0 15px;
+    font-size: 22px;
+    font-weight: bold;
+    border: 3px solid #3498db;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.game-one__main input:focus {
+    outline: none;
+    border-color: #2980b9;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+.game-one__main p:last-of-type {
+    min-height: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 0;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+/* Стили для сообщений результата */
+.game-one__main .hint {
+    color: #e67e22;
+}
+
+.game-one__main .success {
+    color: #27ae60;
+    background-color: #e8f8f0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.game-one__footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.game-one__footer a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 25px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.game-one__footer a:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
 }
