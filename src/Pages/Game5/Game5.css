@@ -1,0 +1,91 @@
+.game-five {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+.game-five h1 {
+    font-size: 32px;
+    color: #333;
+    margin: 0 0 30px 0;
+}
+
+.game-five p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: bold;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.game-five button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px auto;
+    padding: 0 20px;
+    transition: background-color 0.3s;
+}
+
+.game-five button:hover {
+    background-color: #357ab8;
+}
+
+/* Стили для экрана результатов */
+.game-five .result {
+    font-size: 24px;
+    color: #2e7d32;
+    background-color: #e8f5e9;
+    padding: 20px 40px;
+    border-radius: 8px;
+    margin: 30px 0;
+}
+
+.game-five .restart-button {
+    background-color: #ff9800;
+    width: 200px;
+}
+
+.game-five .restart-button:hover {
+    background-color: #f57c00;
+}
+
+/* Стили для контейнера вопросов */
+.game-five .question-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+.game-five .home-link {
+    display: inline-block;
+    color: #4a90e2;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: 1px solid #4a90e2;
+    border-radius: 6px;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+.game-five .home-link:hover {
+    background-color: #4a90e2;
+    color: white;
+}

@@ -1,0 +1,55 @@
+.game-six-container {
+    width: 100%;
+    min-height: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: background-color 500ms linear;
+    display: block;
+    position: relative;
+}
+
+.game-six-container h1 {
+    font-size: 32px;
+    color: #333333;
+    margin: 0 auto 30px auto;
+    padding-top: 100px;
+    text-align: center;
+    width: 400px;
+}
+
+.game-six-button {
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin: 0 auto 30px auto;
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.game-six-button:hover {
+    background-color: #357ab8;
+}
+
+.game-six-link {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    color: #4a90e2;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 0;
+    border: 1px solid #4a90e2;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.game-six-link:hover {
+    background-color: #4a90e2;
+    color: #ffffff;
+}
